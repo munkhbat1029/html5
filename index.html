@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>Online store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body class="pagecenter" style="max-width:1200px">
+<nav class="sidebar bar-block white collapse top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="container display-container padding-16">
+    <i onclick="_close()" class="fa fa-remove hide-large button display-topright"></i>
+    <h3 class="wide"><b>Online худалдааны сайт</b></h3>
+  </div>
+  <div class="padding-64 large text-grey" style="font-weight:bold">
+    <a href="#" class="bar-item button">Хүнсний бүтээгдэхүүн</a>
+    <a href="#" class="bar-item button">Гоо сайхан</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="button block white left-align" id="myBtn">
+      Комьпютер/гар утас <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="bar-block hide padding-large medium">
+      <a href="#" class="bar-item button light-grey"><i class="fa fa-caret-right margin-right"></i>Бүгд</a>
+      <a href="#" class="bar-item button">Гар утас</a>
+      <a href="#" class="bar-item button">Монитор</a>
+      <a href="#" class="bar-item button">Дагалдах хэрэгсэл</a>
+      <a href="#" class="bar-item button">Зөөврийн комьпютер</a>
+      <a href="#" class="bar-item button">Процессор</a>
+    </div>
+    <a href="#" class="bar-item button"></a>
+    <a href="#" class="bar-item button">Ном бичиг хэрэг</a>
+    <a href="#" class="bar-item button">Цахилгаан бараа</a>
+    <a href="#" class="bar-item button">Хувцас загвар</a>
+    <a href="#" class="bar-item button">Бэлэг дурсгал</a>
+    <a href="#" class="bar-item button">Спорт бараа</a>
+  </div>
+  <a href="#footer" class="bar-item button padding">Холбоо барих</a> 
+  <a href="javascript:void(0)" class="bar-item button padding" onclick="document.getElementById('newsletter').style.display='block'">Захиалга</a> 
+  <a href="#footer"  class="bar-item button padding">Илүү</a>
+</nav>
+
+
+<header class="bar top hide-large black xlarge">
+  <div class="bar-item padding-24 wide"></div>
+  <a href="javascript:void(0)" class="bar-item button padding-24 right" onclick="_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<div class="overlay hide-large" onclick="_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="main" style="margin-left:250px">
+
+  <div class="hide-large" style="margin-top:83px"></div>
+
+  <header class="container xlarge">
+    <p class="left">Хүнсний бүтээгдэхүүн</p>
+    <p class="right">
+      <i class="fa fa-shopping-cart margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+
+  <div class="display-container container">
+    <img src="images/garlic.jpg" alt="Garlic" style="width:100%" >
+    <div class="display-topleft text-white" style="padding:24px 48px">
+      <h1 class="jumbo hide-small">Сармис</h1>
+      <p><a href="#buteegdehuun1" class="button black padding-large large">Худалдан авах</a></p>
+    </div>
+  </div>
+  <video width="400" controls>
+    <source src="The new iPhone SE — Apple.mp4" type="video/mp4">
+    <source src="The new iPhone SE — Apple.ogg" type="video/ogg">
+  </video>
+    <a href="The new iPhone SE — Apple.mp4" target="_blank">Iphone SE</a>
+
+  <div class="container text-grey" id="buteegdehuun1">
+    <p>1 бараа</p>
+  </div>
+
+
+  <div class="row grayscale">
+    <div class="col l3 s6">
+      <div class="container">
+        <img src="images/iphone-se-family-select-2020.jpg" style="width:40%">
+        <p>Iphone SE<br><b>1,599,999₮</b></p>
+  </div>
+   
+    
+
+
+  <div class="container black padding-32">
+    <h1>Хайлт</h1>
+    <p><input class="input border" type="text" placeholder="Хайх үгээ оруулна уу" style="width:100%"></p>
+    <button type="button" class="button red margin-bottom">Хайх</button>
+  </div>
+
+  <footer class="padding-64 light-grey small center" id="footer">
+    <div class="row-padding">
+      <div class="col s4">
+        <h4>Үйлчилгээтэй холбоотой санал хүсэлт байна уу?</h4>
+        <form action="https://www.schools.com/action_page.php" target="_blank">
+          <p><input class="input border" type="text" placeholder="Нэр" name="Нэр" required></p>
+          <p><input class="input border" type="text" placeholder="E-mail-хаяг" name="E-mail хаяг" required></p>
+          <p><input class="input border" type="text" placeholder="Бичвэр" name="бичвэр" required></p>
+          <button type="submit" class="button block black">Илгээх</button>
+        </form>
+      </div>
+
+      <div class="col s4">
+        <h4>Мэдээлэл</h4>
+        <p><a href="#">Бидний тухай</a></p>
+        <p><a href="#">Байршил</a></p>
+        <p><a href="#">Заавар</a></p>
+        <p><a href="#">Хямдрал</a></p>
+        <p><a href="#">Хөнгөлөлт</a></p>
+        <p><a href="#">Урамшуулал</a></p>
+        <p><a href="#">Тусламж</a></p>
+      </div>
+
+      <div class="col s4 justify">
+        <h4>Бусад</h4>
+        <p><i class="fa fa-fw fa-phone"></i>Online store</p>
+        <p><i class="fa fa-fw fa-envelope"></i>17b1num0699@stud.num.edu.mn</p>
+        <h4>Гүйлгээний аргууд</h4>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official hover-opacity large"></i>
+        <i class="fa fa-instagram hover-opacity large"></i>
+        <i class="fa fa-snapchat hover-opacity large"></i>
+        <i class="fa fa-pinterest-p hover-opacity large"></i>
+        <i class="fa fa-twitter hover-opacity large"></i>
+        <i class="fa fa-linkedin hover-opacity large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="black center padding-24">Developed by <a href="default.html" title="17b1num0699" target="_blank" class="hover-opacity">Munkhbat</a></div>
+
+</div>
+
+<div id="newsletter" class="modal">
+  <div class="modal-content animate-zoom" style="padding:32px">
+    <div class="container white center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove right button transparent xxlarge"></i>
+      <h2 class=" wide">Нэвтрэх</h2>
+    
+      <p><input class="input border" type="text" placeholder="E-mail-хаягаа оруулна уу"></p>
+      <button type="button" class="button padding-large red margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Нэвтрэх</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
